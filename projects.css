@@ -1,0 +1,115 @@
+body{
+	
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  top:50px;
+  
+}
+
+.image {
+  
+  width: 100%;
+  height: 50%;
+  background-image:url(assets/img/spo.png);
+  z-index:1000;
+  background-size:cover;
+  animation: spotify 10s linear infinite;
+}
+@keyframes spotify{
+	0%{
+
+		 background-image:url(assets/img/spo.png);
+	}
+	100%{
+		 background-image:url(assets/img/spo2.png);
+		 
+	}
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container{
+	left:25%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+  top:60px;
+  
+}
+
+.image2 {
+  
+  width: 100%;
+  height: 50%;
+  background-image:url(assets/img/epic.png);
+  z-index:1000;
+  background-size:cover;
+  animation: spotify2 6s linear infinite;
+}
+@keyframes spotify2{
+	0%{
+
+		 background-image:url(assets/img/epic.png);
+	}
+	
+	50%{
+		 background-image:url(assets/img/epic2.png);
+		 
+	}
+	100%{
+		 background-image:url(assets/img/epic3.png);
+	}
+}
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container2:hover .overlay2 {
+  opacity: 1;
+}
+.container2{
+	left:25%;
+}
+.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
